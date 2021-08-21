@@ -4,7 +4,7 @@ import { Text, StyleSheet, View, Button,TouchableOpacity} from "react-native";
 const InitialScreen = (props) => {
   return (
     <View>
-    <Text style={styles.text}>Welcome!</Text>
+    <Text style={styles.text}>Welcome to Voice Memo!</Text>
     <Button 
       onPress ={() => props.navigation.navigate('Login')}
       title = "Login"
@@ -19,7 +19,9 @@ const InitialScreen = (props) => {
 
 const styles = StyleSheet.create({
   text: {
-    fontSize: 30
+    fontSize: 26,
+    textAlign: "center",
+    margin: 5
   }
 });
 

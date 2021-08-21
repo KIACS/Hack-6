@@ -28,16 +28,17 @@ const LoginScreen = (props) => {
 
 const styles = StyleSheet.create({
     text: {
-      fontSize: 50
+      fontSize: 30,
+      textAlign: "center"
     },
     subtext: {
-      fontSize : 20
+      fontSize : 20,
+      margin: 5
     },
     input: {
         height: 40,
         margin: 16,
-        borderWidth: 3,
-        padding: 10
+        borderWidth: 3
     }
 });
 

@@ -1,26 +1,38 @@
 import React, { useState } from "react";
 import { Text, TextInput, StyleSheet, View, Button } from "react-native";
 
-const LoginScreen = (props) => {
+const SignupScreen = (props) => {
     const [username, setUsername] = useState('');
+    const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [confirm, setConfirm] = useState('');
 
     return (
     <View>
-        <Text style={styles.text}>Login</Text>
+        <Text style={styles.text}>New Account</Text>
         <Text style={styles.subtext}>Username: </Text>
         <TextInput
           style={styles.input}
           onChangeText={username => setUsername(username)}
+        />
+        <Text style={styles.subtext}>Email: </Text>
+        <TextInput
+          style={styles.input}
+          onChangeText={email => setEmail(email)}
         />
         <Text style={styles.subtext}>Password: </Text>
         <TextInput
           style={styles.input}
           onChangeText={password => setPassword(password)}
         />
+        <Text style={styles.subtext}>Confirm Password: </Text>
+        <TextInput
+          style={styles.input}
+          onChangeText={confirm => setConfirm(confirm)}
+        />
         <Button 
           onPress ={() => props.navigation.navigate('Home')}
-          title = "Login"
+          title = "Register"
         />
     </View>
     );
@@ -41,4 +53,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default LoginScreen;
+export default SignupScreen;

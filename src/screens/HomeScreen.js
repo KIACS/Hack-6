@@ -3,11 +3,11 @@ import { Text, StyleSheet, View, Button,TouchableOpacity} from "react-native";
 
 const HomeScreen = (props) => {
   return (
-    <View>
+    <View style={styles.screen}>
     <Text style={styles.text}>Pick Tourist Attraction</Text>
     <Button 
       onPress ={() => props.navigation.navigate('List')}
-      title = "Tourist Attraction"
+      title = "Tourist Attraction 1"
     />
     <Button 
       onPress ={() => props.navigation.navigate('List')}
@@ -27,6 +27,12 @@ const HomeScreen = (props) => {
 const styles = StyleSheet.create({
   text: {
     fontSize: 30
+  },
+  screen: {
+    justifyContent: "center",
+    alignItems: "center",
+    textAlign: "center",
+    margin: 20
   }
 });
 

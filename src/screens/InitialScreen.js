@@ -1,10 +1,13 @@
 import React from "react";
-import { Text, StyleSheet, View, Button,TouchableOpacity} from "react-native";
+import { Text, StyleSheet, View, Button, Image} from "react-native";
 
 const InitialScreen = (props) => {
   return (
-    <View>
-    <Text style={styles.text}>Welcome to Voice Memo!</Text>
+    <View style={styles.screen}>
+    <Text style={styles.text}>Welcome to Memo!</Text>
+    <Image source = {require('../images/Logo.png')} />
+
+    <View style={styles.button}>
     <Button 
       onPress ={() => props.navigation.navigate('Login')}
       title = "Login"
@@ -14,6 +17,8 @@ const InitialScreen = (props) => {
       title = "Signup"
     />
     </View>
+
+    </View>
   )
 };
 
@@ -22,6 +27,15 @@ const styles = StyleSheet.create({
     fontSize: 26,
     textAlign: "center",
     margin: 5
+  },
+  screen: {
+    justifyContent: "center",
+    alignItems: "center",
+    textAlign: "center",
+    margin: 50
+  },
+  button: {
+    flexDirection: 'row'
   }
 });
 

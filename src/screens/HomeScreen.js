@@ -8,7 +8,7 @@ const HomeScreen = (props) => {
     <Button 
       color = "#8b0000"
       title = "Tourist Attraction 1"
-      onPress ={() => props.navigation.navigate('List')}
+      onPress ={() => props.navigation.navigate('GooglePlaces')}
     />
     <Button 
       colour = "#2196F3"

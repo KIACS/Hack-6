@@ -41,16 +41,17 @@ const SignupScreen = (props) => {
 const styles = StyleSheet.create({
     text: {
       fontSize: 30,
-      textAlign: "center"      
+      textAlign: "center",
+      color: "#8b0000"    
     },
     subtext: {
       fontSize : 20,
       margin: 5
     },
     input: {
-        height: 40,
-        margin: 16,
-        borderWidth: 3
+      height: 40,
+      margin: 16,
+      borderWidth: 3,
     }
 });
 

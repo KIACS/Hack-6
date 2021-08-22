@@ -6,20 +6,20 @@ const HomeScreen = (props) => {
     <View style={styles.screen}>
     <Text style={styles.text}>Pick Tourist Attraction</Text>
     <Button 
-      onPress ={() => props.navigation.navigate('List')}
+      color = "#8b0000"
       title = "Tourist Attraction 1"
+      onPress ={() => props.navigation.navigate('List')}
     />
     <Button 
-      onPress ={() => props.navigation.navigate('List')}
+      colour = "#2196F3"
       title = "Tourist Attraction 2"
-    />
-       <Button 
       onPress ={() => props.navigation.navigate('List')}
-      title = "Tourist Attraction 3"
     />
-{/*     <TouchableOpacity onPress ={() => props.navigation.navigate('List')}>
-      <Text>go to list demo</Text>
-    </TouchableOpacity> */}
+    <Button 
+      color = "#8b0000"
+      title = "Tourist Attraction 3"
+      onPress ={() => props.navigation.navigate('List')}
+    />
     </View>
   )
 };

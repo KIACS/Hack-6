@@ -22,7 +22,7 @@ const navigator = createStackNavigator(
     MemoScreen : MemoScreen
   },
   {
-    initialRouteName: "MemoScreen",
+    initialRouteName: "Initial",
     defaultNavigationOptions: {
       title: "Memo",
     },

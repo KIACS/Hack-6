@@ -13,6 +13,14 @@ const GooglePlacesInput = () => {
         key: 'AIzaSyA9IHDqUT2YtuwTGDxCU4auN3jO1qju-zc',
         language: 'en',
       }}
+      requestUrl={{
+        useOnPlatform: 'web', // or "all"
+        url:
+          'https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api', // or any proxy server that hits https://maps.googleapis.com/maps/api
+        headers: {
+          Authorization: `an auth token`, // if required for your proxy
+        },
+      }}
     />
   );
 };

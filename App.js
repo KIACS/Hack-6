@@ -6,6 +6,7 @@ import ComponentScreen from "./src/screens/ComponentsScreen";
 import ListScreen from "./src/screens/ListScreen";
 import LoginScreen from "./src/screens/LoginScreen";
 import SignupScreen from "./src/screens/SignupScreen";
+import MemoScreen from "./src/screens/MemoScreen.js";
 
 const navigator = createStackNavigator(
   {
@@ -14,10 +15,11 @@ const navigator = createStackNavigator(
     Component : ComponentScreen,
     List : ListScreen,
     Login : LoginScreen,
-    Signup : SignupScreen
+    Signup : SignupScreen,
+    MemoScreen : MemoScreen
   },
   {
-    initialRouteName: "Initial",
+    initialRouteName: "MemoScreen",
     defaultNavigationOptions: {
       title: "Memo",
     },

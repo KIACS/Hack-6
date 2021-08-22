@@ -10,6 +10,7 @@ import SignupScreen from "./src/screens/SignupScreen";
 import GooglePlacesAPI from "./src/screens/GooglePlacesAPI";
 import MemoScreen from "./src/screens/MemoScreen.js";
 
+
 const navigator = createStackNavigator(
   {
     Initial : InitialScreen,

@@ -6,7 +6,7 @@ const HomeScreen = (props) => {
     <View>
     <Text style={styles.text}>Pick Tourist Attraction</Text>
     <Button 
-      onPress ={() => props.navigation.navigate('List')}
+      onPress ={() => props.navigation.navigate('GooglePlacesAPI')}
       title = "Tourist Attraction"
     />
     <Button 

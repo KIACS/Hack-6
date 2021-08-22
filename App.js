@@ -1,3 +1,4 @@
+import "./styles.css";
 import { createAppContainer } from "react-navigation";
 import { createStackNavigator } from "react-navigation-stack";
 import InitialScreen from "./src/screens/InitialScreen";
@@ -7,6 +8,7 @@ import ListScreen from "./src/screens/ListScreen";
 import LoginScreen from "./src/screens/LoginScreen";
 import SignupScreen from "./src/screens/SignupScreen";
 import GooglePlacesAPI from "./src/screens/GooglePlacesAPI";
+
 
 const navigator = createStackNavigator(
   {

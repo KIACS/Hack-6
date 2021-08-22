@@ -14,12 +14,9 @@ const GooglePlacesInput = () => {
         language: 'en',
       }}
       requestUrl={{
-        useOnPlatform: 'web', // or "all"
+        useOnPlatform: 'all', // or "all"
         url:
           'https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api', // or any proxy server that hits https://maps.googleapis.com/maps/api
-        headers: {
-          Authorization: `an auth token`, // if required for your proxy
-        },
       }}
     />
   );

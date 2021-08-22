@@ -13,7 +13,7 @@ const HomeScreen = (props) => {
     <Button 
       colour = "#2196F3"
       title = "Tourist Attraction 2"
-      onPress ={() => props.navigation.navigate('List')}
+      onPress ={() => props.navigation.navigate('Memo')}
     />
     <Button 
       color = "#8b0000"

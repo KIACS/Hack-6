@@ -8,8 +8,6 @@ import ListScreen from "./src/screens/ListScreen";
 import LoginScreen from "./src/screens/LoginScreen";
 import SignupScreen from "./src/screens/SignupScreen";
 import GooglePlacesAPI from "./src/screens/GooglePlacesAPI";
-import MemoScreen from "./src/screens/MemoScreen.js";
-
 
 const navigator = createStackNavigator(
   {
@@ -20,7 +18,6 @@ const navigator = createStackNavigator(
     Login : LoginScreen,
     Signup : SignupScreen,
     GooglePlaces : GooglePlacesAPI,
-    MemoScreen : MemoScreen
   },
   {
     initialRouteName: "Initial",

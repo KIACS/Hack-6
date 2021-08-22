@@ -29,7 +29,8 @@ const LoginScreen = (props) => {
 const styles = StyleSheet.create({
     text: {
       fontSize: 30,
-      textAlign: "center"
+      textAlign: "center",
+      color: "#8b0000"
     },
     subtext: {
       fontSize : 20,
